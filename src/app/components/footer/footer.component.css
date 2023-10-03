@@ -1,0 +1,38 @@
+.general{
+  background-color: black;
+  height: auto;
+  padding: 70px 400px;
+  font-family: 'Inclusive Sans', sans-serif;
+  font-family: 'Martian Mono', monospace;
+  font-family: 'Nunito', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+.section1{
+  font-size: 20px;
+  color: grey;
+}
+
+.section2{
+  font-size: 20px;
+  color: gray;
+}
+
+.container{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  padding: 20px 0px;
+}
+
+.fatwig a{
+  color: white;
+  font-size: 40px;
+  margin: 0 20px;
+}
+
+.asgpmt a{
+  color: white;
+  font-size: 40px;
+  margin: 0 20px;
+}

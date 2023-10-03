@@ -1,0 +1,20 @@
+<app-navbar></app-navbar>
+<div class="card-container">
+  <div ngClass="result-box" *ngFor="let series of jsonData; let i = index" class="card" (mouseover)="onMouseOver(i)" (mouseout)="onMouseOut(i)">
+    <img [src]="series.images['Poster Art'].url" alt="{{ series.title }}" />
+    <div class="card-content">
+      <h2 (click)="openPopup(series)">{{ series.title }}</h2>
+      <p>Año de lanzamiento: {{ series.releaseYear }}</p>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="selectedSeries" class="popup">
+  <h2>{{ selectedSeries.title }}</h2>
+  <p>{{ selectedSeries.description }}</p>
+  <p>Año de lanzamiento: {{ selectedSeries.releaseYear }}</p>
+  <img [src]="selectedSeries.images['Poster Art'].url" alt="{{ selectedSeries.title }}" />
+  <button class="button" (click)="closePopup()">Cerrar</button>
+</div>
+
+<app-footer></app-footer>
