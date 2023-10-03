@@ -10,6 +10,7 @@ import { SeriesComponent } from './components/series/series.component';
 import { PeliculasComponent } from './components/peliculas/peliculas.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ErrorComponent } from './components/error/error.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FooterComponent } from './components/footer/footer.component';
     SeriesComponent,
     PeliculasComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,

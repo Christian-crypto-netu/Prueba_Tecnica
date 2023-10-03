@@ -1,0 +1,22 @@
+.titulo{
+  background-color: rgb(32, 32, 32);
+  padding: 10px;
+  color: white;
+  text-align: center;
+  font-family: 'Martian Mono', monospace;
+  font-family: 'Nunito', sans-serif;
+}
+
+.error{
+  height: 345px;
+}
+
+.error p{
+  margin-left: 310px;
+  font-size: 40px;
+  color: gray;
+  font-family: 'Inclusive Sans', sans-serif;
+  font-family: 'Martian Mono', monospace;
+  font-family: 'Nunito', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}

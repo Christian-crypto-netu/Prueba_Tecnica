@@ -31,6 +31,7 @@ export class PeliculasComponent implements OnInit {
   onMouseOut(index: number){
     document.getElementsByClassName('result-box')[index].classList.remove('hovered');
   }
+  
   openPopup(movie: any){
     this.selectedMovies = movie;
   }
