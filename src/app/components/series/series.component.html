@@ -3,7 +3,7 @@
   <div ngClass="result-box" *ngFor="let series of jsonData; let i = index" class="card" (mouseover)="onMouseOver(i)" (mouseout)="onMouseOut(i)">
     <img [src]="series.images['Poster Art'].url" alt="{{ series.title }}" />
     <div class="card-content">
-      <h2 (click)="openPopup(series)">{{ series.title }}</h2>
+      <h2 class="title" (click)="openPopup(series)">{{ series.title }}</h2>
       <p>Año de lanzamiento: {{ series.releaseYear }}</p>
     </div>
   </div>

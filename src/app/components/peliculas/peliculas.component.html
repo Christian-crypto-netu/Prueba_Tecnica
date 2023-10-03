@@ -1,1 +1,20 @@
-<p>peliculas works!</p>
+<app-navbar></app-navbar>
+<div class="card-container">
+  <div ngClass="result-box" *ngFor="let movie of jsonData; let i = index" class="card" (mouseover)="onMouseOver(i)" (mouseout)="onMouseOut(i)">
+    <img [src]="movie.images['Poster Art'].url" alt="{{ movie.title }}" />
+    <div class="card-content">
+      <h2 class="title" (click)="openPopup(movie)">{{ movie.title }}</h2>
+      <p>Año de lanzamiento: {{ movie.releaseYear }}</p>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="selectedMovies" class="popup">
+  <h2>{{ selectedMovies.title }}</h2>
+  <p>{{ selectedMovies.description }}</p>
+  <p>Año de lanzamiento: {{ selectedMovies.releaseYear }}</p>
+  <img [src]="selectedMovies.images['Poster Art'].url" alt="{{ selectedMovies.title }}" />
+  <button class="button" (click)="closePopup()">Cerrar</button>
+</div>
+
+<app-footer></app-footer>
