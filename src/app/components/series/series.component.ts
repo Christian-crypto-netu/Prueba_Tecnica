@@ -27,17 +27,14 @@ export class SeriesComponent implements OnInit {
   }
 
   onMouseOver(index: number) {
-    // Aplicar efecto de reducción de opacidad y borde blanco al posicionar el mouse sobre el resultado
     document.getElementsByClassName('result-box')[index].classList.add('hovered');
   }
   
   onMouseOut(index: number) {
-    // Remover efecto de reducción de opacidad y borde blanco al quitar el mouse del resultado
     document.getElementsByClassName('result-box')[index].classList.remove('hovered');
   }
   
   openPopup(series: any) {
-    // Abrir un popup mostrando la información completa de la serie seleccionada
     this.selectedSeries = series;
   }
   closePopup() {
